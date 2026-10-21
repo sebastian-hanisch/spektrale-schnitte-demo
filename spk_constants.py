@@ -75,7 +75,7 @@ PRESET_HELP = {
     "Ncut teilt, der kleinste Schnitt nicht": "Der kleinste Schnitt trennt nur einen einzelnen Standort ab, der beste Ncut-Schnitt teilt das Netz in sieben und neun Standorte.",
     "Ncut und RatioCut wählen Verschiedenes": "Die besten Schnitte nach Ncut und nach RatioCut sind verschieden: vier Standorte gegen zwölf, drei gegen dreizehn.",
     "Der Sweep verfehlt das Optimum": "Der beste Anfang der Sortierung nach dem Fiedler-Vektor hat eine größere Konduktanz als der beste Schnitt der Aufzählung (das 1,2-Fache), bleibt aber unter √(2 λ₂).",
-    "Gitter: λ₂ ist doppelt": "Das quadratische Gitter hat einen doppelten Eigenwert λ₂: Der Fiedler-Vektor ist nicht eindeutig, die Wahl im Eigenraum entscheidet über den Sweep (normalisiert 1,4-fach über h, unnormalisiert trifft h).",
+    "Gitter: λ₂ ist doppelt": "Das quadratische Gitter hat einen doppelten Eigenwert λ₂: Der Fiedler-Vektor ist nicht eindeutig, die Wahl im Eigenraum entscheidet über den Sweep (mit der Wahl der Demo: normalisiert 1,4-fach über h, unnormalisiert trifft h; bei anderer Wahl kann es umgekehrt sein).",
     "Cheeger ist nicht eng": "Die kleinste Konduktanz h liegt mehr als das Vierfache über der unteren Schranke λ₂ / 2 und bei etwa 29 % der oberen: Die Schranken gelten, sagen aber wenig.",
     "Der Sweep findet einen Verbund": "Im Verbundnetz mit 90 Standorten schneidet der Sweep genau eine der drei Regionen ab (30 Standorte, 2 Leitungen); die Halbierung am Median hat eine Konduktanz von 0,115 statt 0,013.",
     "Großes Kartennetz": "100 Standorte, keine Aufzählung mehr: Der Sweep braucht eine einzige Eigenzerlegung und findet einen sehr dünnen Schnitt mit einer Leitung.",

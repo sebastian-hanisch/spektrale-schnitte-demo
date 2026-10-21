@@ -52,7 +52,7 @@ def test_verdict_sweep_counts_hits_and_names_degenerate_eigenvalues():
     kind, text = ev.verdict_sweep(rows)
     assert kind == "info"
     assert text == ("Der Sweep-Cut trifft die kleinste Konduktanz in 1 von 4 Netzen mit der normalisierten Matrix und in 3 von 4 mit der unnormalisierten, den kleinsten Ncut (normalisiert) in 3 von 4 und den "
-                    "kleinsten RatioCut (unnormalisiert) in 2 von 4; schlimmstenfalls liegt seine Konduktanz das 1,5-Fache über h. In 2 von 4 Netzen ist λ₂ mehrfach (Gitter): dort hängt der Sweep von der "
+                    "kleinsten RatioCut (unnormalisiert) in 2 von 4; auf diesen Netzen liegt seine Konduktanz höchstens das 1,5-Fache über h. In 2 von 4 Netzen ist λ₂ mehrfach (Gitter): dort hängt der Sweep von der "
                     "Wahl des Fiedler-Vektors im Eigenraum ab.")
     rows[1]["multiple"] = 0
     assert "mehrfach" not in ev.verdict_sweep(rows)[1] and ev.verdict_sweep(rows)[1].endswith("über h.")

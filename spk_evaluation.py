@@ -242,7 +242,7 @@ def verdict_sweep(rows):
     s = {k: sum(r[k] for r in rows) for k in ("hit_cond", "hit_cond_plain", "hit_ncut", "hit_ratio_plain", "multiple")}
     worst = max(r["worst_cond"] for r in rows)
     text = (f"Der Sweep-Cut trifft die kleinste Konduktanz in {_of(s['hit_cond'], nets)} Netzen mit der normalisierten Matrix und in {_of(s['hit_cond_plain'], nets)} mit der unnormalisierten, den kleinsten Ncut "
-            f"(normalisiert) in {_of(s['hit_ncut'], nets)} und den kleinsten RatioCut (unnormalisiert) in {_of(s['hit_ratio_plain'], nets)}; schlimmstenfalls liegt seine Konduktanz das {_dec(worst)}-Fache über h.")
+            f"(normalisiert) in {_of(s['hit_ncut'], nets)} und den kleinsten RatioCut (unnormalisiert) in {_of(s['hit_ratio_plain'], nets)}; auf diesen Netzen liegt seine Konduktanz höchstens das {_dec(worst)}-Fache über h.")
     if s["multiple"]:
         text += f" In {_of(s['multiple'], nets)} Netzen ist λ₂ mehrfach (Gitter): dort hängt der Sweep von der Wahl des Fiedler-Vektors im Eigenraum ab."
     return "info", text

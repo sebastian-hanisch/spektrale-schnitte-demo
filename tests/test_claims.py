@@ -51,6 +51,8 @@ def test_how_often_the_sweep_cut_hits_the_optimum():
     assert [r["hit_cond_plain"] for r in rows] == [8, 1, 12, 7, 7, 12, 12] and sum(r["hit_cond_plain"] for r in rows) == 59
     assert [r["hit_ncut"] for r in rows] == [9, 6, 0, 8, 11, 12, 12] and sum(r["hit_ncut"] for r in rows) == 58
     assert [r["hit_ratio_plain"] for r in rows] == [11, 12, 12, 5, 10, 12, 12] and sum(r["hit_ratio_plain"] for r in rows) == 74
+    no_grid = [r for r in rows if r["label"] != "Gitter"]
+    assert len(no_grid) == 6 and sum(r["hit_cond"] for r in no_grid) == 48 and sum(r["hit_cond_plain"] for r in no_grid) == 47     # ohne das (zwölfmal gleiche) Gitter kein Unterschied der Matrizen
     assert round(max(r["worst_cond"] for r in rows), 2) == 1.43 and [round(r["worst_cond"], 2) for r in rows] == [1.22, 1.19, 1.43, 1.2, 1.17, 1.0, 1.0]
 
 

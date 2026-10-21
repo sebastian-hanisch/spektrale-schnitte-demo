@@ -82,11 +82,11 @@ with st.container(key="kopf"):
     st.title("🔭 Spektrale Schnitte: Fiedler-Vektor, Sweep-Cut und Cheeger")
 st.markdown(
     """
-**Warum kann ein Eigenvektor einen Schnitt finden, und wie gut?** Der kleinste Schnitt eines Netzes trennt meist nur **einen einzelnen Standort** ab. Wer eine **sinnvolle Teilung** sucht, braucht ein Maß, das große Teile
+**Warum kann ein Eigenvektor einen Schnitt finden, und wie gut?** Der kleinste Schnitt eines Netzes trennt auf den Modellnetzen meist nur **einen einzelnen Standort** ab. Wer eine **sinnvolle Teilung** sucht, braucht ein Maß, das große Teile
 belohnt: **RatioCut** teilt durch die Zahl der Standorte, **Ncut** und die **Konduktanz** durch das Volumen (die Summe der Grade). Diese Aufgaben sind schwer; die **spektrale** Antwort ist ein Eigenvektor: Der Vektor zum zweitkleinsten
 Eigenwert der Laplace-Matrix (der **Fiedler-Vektor**) ordnet die Standorte, und der **Sweep-Cut** schneidet an der besten Stelle dieser Ordnung. Die **Ungleichung von Cheeger** sagt, wie gut das höchstens sein kann.
 
-Auffällig: Der kleinste Schnitt und die ausgewogenen Maße wählen **verschiedene** Schnitte; die Schranken von Cheeger gelten ausnahmslos, sind aber **nie eng**; und wo λ₂ mehrfach ist (Gitter), ist der Fiedler-Vektor nicht eindeutig.
+Auffällig: Der kleinste Schnitt und die ausgewogenen Maße wählen **verschiedene** Schnitte; die Schranken von Cheeger gelten ausnahmslos, sind aber in diesen Modellnetzen **nie eng**; und wo λ₂ mehrfach ist (Gitter), ist der Fiedler-Vektor nicht eindeutig.
 
 Das ist das siebte Stück der Reihe **Schnitte und Zusammenhang**; den kleinsten Schnitt zeigt **globaler-schnitt-demo**, die Halbierung durch Tausch **bisektion-demo**. Als Verfahren der Gruppenbildung (k-Means auf der Einbettung)
 steht der Eigenvektor in **spectral-demo**, die Modularität in **leiden-demo**; hier geht es um die **Schnittsicht**.
@@ -288,7 +288,7 @@ st.markdown(
 | Annahme | Was passiert, wenn sie verletzt ist | Wer setzt an |
 |---|---|---|
 | **Ein Eigenvektor genügt** | Der Fiedler-Vektor sortiert gut, wenn das Netz einen deutlichen Engpass hat; bei mehrfachem λ₂ (Gitter) ist er nicht eindeutig, bei vielen kleinen Engpässen fasst eine Ordnung nicht alle. | - |
-| **Schranken sind nicht eng** | Die Ungleichung von Cheeger sagt nur, dass der Sweep nie schlechter als √(2 λ₂) ist; sie sagt nicht, dass er das Optimum trifft (Experiment 3 und 4). | - |
+| **Schranken sind in diesen Netzen nicht eng** | In anderen Netzen kann die untere Schranke erreicht werden (vollständige Netze, Hyperwürfel). Die Ungleichung von Cheeger sagt nur, dass der Sweep nie schlechter als √(2 λ₂) ist; sie sagt nicht, dass er das Optimum trifft (Experiment 3 und 4). | - |
 | **Gleiche Leitungen** | Alle Leitungen zählen gleich; mit Gewichten wären Volumen und Schnitt gewichtete Summen. | globaler-schnitt-demo |
 | **Zwei Teile** | Mehr als zwei Teile brauchen mehrere Eigenvektoren (k-Means auf der Einbettung) oder wiederholtes Teilen. | spectral-demo |
 | **Zusammenhang der Teile** | Weder der Sweep noch die Maße verlangen, dass beide Seiten zusammenhängen; die Anfänge der Sortierung können zerfallen. | - |
