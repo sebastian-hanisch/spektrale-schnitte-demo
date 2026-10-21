@@ -1,7 +1,6 @@
 # Spektrale Schnitte: Fiedler-Vektor, Sweep-Cut und Cheeger – Streamlit-Demo
 
-<!-- TODO nach dem Deploy: direkt hierher den Live-Link setzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-spektrale-schnitte-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-spektrale-schnitte-demo.streamlit.app/)**
 
 Siebtes Stück der Reihe **Schnitte und Zusammenhang** (Arbeitstitel der Linie `schnitte-zusammenhang`) in der „Konzepte“-Reihe für die Website „Sebastian Hanisch – Operations Research und Machine Learning“, Bereich Graphentheorie. Vehikel: ein **Verbindungsnetz zwischen Standorten** (Depots, Umschlagpunkte, Werke), synthetisch und mit festem Zufalls-Seed, alle Leitungen gleich. Die Demo fragt: **Warum kann ein Eigenvektor einen Schnitt finden, und wie gut?** Der Eigenvektor zum zweitkleinsten Eigenwert der Laplace-Matrix (der **Fiedler-Vektor**) ordnet die Standorte; der **Sweep-Cut** schneidet an der besten Stelle der Ordnung; die **Ungleichung von Cheeger** sagt, wie gut das höchstens sein kann. Daneben stehen die vier Zielfunktionen nebeneinander: der kleinste Schnitt, **RatioCut**, **Ncut** und die **Konduktanz**.
 
