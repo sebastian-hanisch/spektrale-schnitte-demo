@@ -1,0 +1,9 @@
+{
+ "spk_algorithm.py|konstante|1 -> 0|817c07fb#1": "equivalent",
+ "spk_algorithm.py|minmax|max -> min|a3420513#0": "equivalent",
+ "spk_algorithm.py|minmax|max -> min|aab6d4bc#0": "equivalent",
+ "spk_algorithm.py|rechnung|- -> +|817c07fb#0": "equivalent",
+ "spk_algorithm.py|schleife|range(n) -> range(n - 1)|bb883f51#0": "equivalent",
+ "spk_algorithm.py|vergleich|< -> <=|a83edcf6#0": "equivalent",
+ "spk_algorithm.py|vergleich|<= -> <|1923218a#0": "equivalent"
+}
